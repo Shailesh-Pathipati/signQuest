@@ -46,28 +46,7 @@
   }
   
 
-  /* nav {
-    width: 95vw;
-    height: 40px;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  li {
-    margin: 0 40px;
-  } */
-  
-
-  
-
-
-
-  /* Header.css */
+  /* navbar part is here. */
 
 /* Remove the width property to let Bootstrap handle it */
 nav {
@@ -99,3 +78,17 @@ li a {
   color: #fca311;
   text-decoration: underline; /* Add an underline on hover */
 }
+
+
+  /* just below navbar */
+#title{
+  background-color: orange;
+}
+.container-fluid{
+  width: 100%;
+padding: 5% 15%;
+margin: 0;
+}
+
+
+/* for fontsize of heading */
