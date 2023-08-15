@@ -2,40 +2,43 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
-  html {
+}
+
+html {
     font-family: "Montserrat", sans-serif;
-  }
-  body {
+}
+
+body {
     background: #eee;
     padding: 0 16px;
-  }
-  
-  header {
+}
+
+header {
     background-color: black;
     margin: auto -16px;
     padding: 16px 32px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  }
-  
-  header h1 {
-    color:white;
+}
+
+header h1 {
+    color: white;
     font-family: "McLaren", cursive;
     font-weight: 200;
-  }
-  
-  footer {
+}
+
+footer {
     position: absolute;
     text-align: center;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
-  }
-  
-  footer p {
+}
+
+footer p {
     color: #ccc;
-  }
-  .note {
+}
+
+.note {
     background: #fff;
     border-radius: 7px;
     box-shadow: 0 2px 5px #ccc;
@@ -43,52 +46,113 @@
     width: 240px;
     margin: 16px;
     float: left;
-  }
-  
+}
 
-  /* navbar part is here. */
+
+/* navbar part is here. */
+
 
 /* Remove the width property to let Bootstrap handle it */
+
 nav {
-  width: 95vw;
-  height: 40px;
-  display: flex;
-  justify-content: flex-end;
+    width: 95vw;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
 }
+
 
 /* Remove the margin property to let Bootstrap handle it */
+
 li {
-  margin: 0 30px;
+    margin: 0 30px;
 }
+
 
 /* Add Bootstrap classes for spacing */
+
 .nav-links {
-  padding: 0 40px; /* Add padding instead of margin for list items */
+    padding: 0 40px;
+    /* Add padding instead of margin for list items */
 }
 
+
 /* Style the links using Bootstrap classes */
+
 li a {
-  text-decoration: none;
-  color: white; /* Customize the link color */
-  font-weight: bold;
-  transition: color 0.3s;
+    text-decoration: none;
+    color: white;
+    /* Customize the link color */
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #fca311;
-  text-decoration: underline; /* Add an underline on hover */
+    color: #fca311;
+    text-decoration: underline;
+    /* Add an underline on hover */
 }
 
 
-  /* just below navbar */
-#title{
-  background-color: orange;
+/* just below navbar */
+
+#title {
+    background-color: orange;
 }
-.container-fluid{
-  width: 100%;
-padding: 5% 15%;
-margin: 0;
+
+.container-fluid {
+    width: 100%;
+    padding: 5% 15%;
+    margin: 0;
 }
 
 
 /* for fontsize of heading */
+
+.services-container {
+    display: flex;
+    justify-content: flex-start;
+    /* Start from the left side */
+    gap: 25px;
+    /* Adjust the gap between the services */
+    overflow: hidden;
+    /* Hide any overflowing content */
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.service-box:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-image {
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.service-description {
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
