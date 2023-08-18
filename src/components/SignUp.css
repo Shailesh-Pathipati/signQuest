@@ -1,0 +1,97 @@
+/* Apply styles to the whole page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Create a flex container to center content */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Style the login container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url('https://img.freepik.com/free-vector/abstract-white-bokeh-glowing-lights-background_1017-24049.jpg?w=2000');
+    background-size: cover;
+    background-color: burlywood; /* Change the background color */
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    height: 100vh; /* Use viewport height */
+    text-align: center;
+    margin: auto; /* Center the container vertically */
+    overflow-y: auto; /* Add scroll if content exceeds container height */
+}
+
+/* Style the content inside the login container */
+.login-content {
+    width: 100%; /* Ensure content takes full width */
+    max-width: 400px; /* Limit content width */
+}
+
+
+/* Style the login header */
+.login-header {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333; /* Change the text color */
+}
+
+/* Style form elements */
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Style the login button */
+.login-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    position: bottom;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition for transform */
+    width: 100%;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Added scaling on hover */
+}
+
+/* Apply custom styles to input fields */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Add margin below the password container */
+.form-group:last-child {
+    margin-bottom: 25px;
+}

@@ -1,16 +1,20 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  html {
-    font-family: "Montserrat", sans-serif;
-  }
-  body {
-    background: #eee;
-    padding: 0 16px;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  background-size: cover; /* Adjust as needed */
+  background-position: center center; /* Adjust as needed */
+}
+
+body {
+  padding: 0 16px;
+}
+
+
   header {
     background-color: black;
     margin: auto -16px;
@@ -82,7 +86,7 @@ li a {
 
   /* just below navbar */
 #title{
-  background-color: orange;
+  background-color: burlywood;
 }
 .container-fluid{
   width: 100%;
