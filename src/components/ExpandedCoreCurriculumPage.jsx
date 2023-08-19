@@ -1,10 +1,7 @@
-{/*Redirect to this page if Curriculum service is clicked*/}
-import React from "react";
-
-export default function AudioCaptioningServicePage() {
+export default function Cirriculum(){
   return (
-    <div>
-      {/* Additional content can be added here */}
-    </div>
-  );
+      <div className="about">
+          <h1>This is the Cirriculum page</h1>
+          </div>
+  )
 }

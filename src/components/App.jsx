@@ -9,7 +9,11 @@ import gifsData from "../gifsData";
 import Card from "./Card.jsx";
 import Home from "./Home";
 import Login from "./Login";
-
+import TexttoSpeechPage from "./TexttoSpeechPage";
+import Chatbot from "./ChatbotServicePage";
+import Cirriculum from "./ExpandedCoreCurriculumPage";
+import LipReading from "./LipReading";
+import Contact from "./Contact";
 
 //this is completely for the FirstServie gifs data handling.
 const GifComponent = () => {
@@ -45,10 +49,14 @@ export default function App()
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/Login" element={<Login />} />
               {/* Wrap the div with a Route or Fragment */}
               <Route path="/first-service" element={<GifComponent />} />
+              <Route path="/tap-to-speak" element={<TexttoSpeechPage />} />
+              <Route path="/chatbot-service" element={<Chatbot />} />
+              <Route path="/expanded-core-curriculum" element={<Cirriculum />} />
+              <Route path="/lip-reading" element={<LipReading />} />
             </Routes>
           </main>
           <footer className="footer">

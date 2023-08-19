@@ -1,10 +1,7 @@
-// ChatbotServicePage.js
-import React from "react";
-
-export default function ChatbotServicePage() {
+export default function Chatbot(){
   return (
-    <div>
-      {/* Add content for the Chatbot service page */}
-    </div>
-  );
+      <div>
+          <h2>This is the ChatBot PAGE</h2>
+          </div>
+  )
 }

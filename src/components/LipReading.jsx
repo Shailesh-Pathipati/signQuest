@@ -1,11 +1,7 @@
-{/*Redirect to this page if Audio Captioning service is clicked*/}
-import React from "react";
-
-export default function Lipreading() {
+export default function LipReading(){
   return (
-    <div>
-      {/* Additional content can be added here */}
-      <h1> hodfdsfsdfs</h1>
-    </div>
-  );
+      <div>
+          <h2>This is the Gaming PAGE</h2>
+          </div>
+  )
 }

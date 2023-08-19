@@ -15,7 +15,6 @@ const servicesData = [{
         linkTo: "/first-service", //redirect page
         gifDimensions: { width: "300px", height: "200px" },
     },
-
     {
         imgSrc: "chatbot.gif",
         altText: "Chatbot Facility",
@@ -29,7 +28,7 @@ const servicesData = [{
         altText: "Gamification of Lip Reading ",
         heading: "Gamification of Lip Reading ",
         description: "Engage in exciting games and acitivities like Guess the Phrase,where you decipher lip movements, Word Scramble to master diverse lip shapes. Elevate your lip reading and communication prowess through these entertaining and impactful activities.",
-        linkTo: "/audio-captioning-service", //redirect page
+        linkTo: "/lip-reading", //redirect page
         gifDimensions: { width: "200px", height: "200px" },
     },
     {
@@ -46,7 +45,7 @@ const servicesData = [{
         altText: "School Curriculum",
         heading: "Speech to Text and Text to Speech",
         description: "Instant transcription of spoken content into text, aiding those with hearing impairments .Ensuring effective interaction by converting textual input to spoken language, fostering inclusive and dynamic communication.",
-        linkTo: "/expanded-core-curriculum", //redirect page
+        linkTo: "/tap-to-speak", //redirect page
         gifDimensions: { width: "200px", height: "200px" },
     }
 
