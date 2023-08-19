@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Routes, Route, NavLink } from "react-router-dom";
 import About from "./About";
+import ChatBotIcon from "./ChatBotIcon";
 
 import Heading from "./Header";
 import Footer from "./Footer";
@@ -62,6 +63,7 @@ export default function App()
           <footer className="footer">
             <Footer />
           </footer>
+          <ChatBotIcon/>{/* included the chatbot in the home page also*/ }
         </div>
       );
       
