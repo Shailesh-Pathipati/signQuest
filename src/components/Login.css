@@ -1,88 +1,90 @@
-/* Apply styles to the whole page */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Roboto', Arial, sans-serif;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* Create a flex container to center content */
-.login-page {
+.login {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FAFAFA;
 }
 
-/* Style the login container */
-.login-container {
+.login_box {
+    background-color: #E0E6ED;
+    height: 60vh;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    background-image: url('https://img.freepik.com/free-vector/abstract-white-bokeh-glowing-lights-background_1017-24049.jpg?w=2000');
-    background-size: cover;
-    background-color: burlywood; /* Change the background color */
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
-    width: 60%;
-    max-width: 500px;
-    height: 80vh;
-    text-align: center;
+    border-radius: 20px;
 }
 
-/* Style the login header */
-.login-header {
-    margin-bottom: 15px;
-    font-size: 24px;
-    color: #333; /* Change the text color */
-}
-
-/* Style form elements */
-.form-group {
-    margin-bottom: 15px;
-    width: 100%;
-    text-align: left;
-}
-
-/* Style the login button */
-.login-button {
-    background-color: #007bff;
-    color: #ffffff;
+.login input {
+    width: 30vw;
     border: none;
-    position: bottom;
-    padding: 12px 24px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition for transform */
-    width: 100%;
+    outline: none;
+    padding: 10px 15px;
+    /* border-radius: 20px; */
+    margin: 10px;
+    border-bottom: 2px solid #4CAF50;
+    color: #4CAF50;
 }
 
-.login-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05); /* Added scaling on hover */
+.login button {
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 5px;
+    background-color: #12AFF1;
+    color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Apply custom styles to input fields */
-input[type="text"], input[type="password"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    background-color: #f8f8f8;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+.login button div {
+    display: flex;
+    align-items: center;
 }
 
-input[type="text"]:focus, input[type="password"]:focus {
-    border-color: #007bff;
-    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.4);
+.login button img {
+    height: 30px;
+    margin-left: 10px;
 }
 
-/* Add margin below the password container */
-.form-group:last-child {
-    margin-bottom: 25px;
+.extra_options {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+/*logout icon and logout button styles*/
+.logout {
+    position: relative;
+    width: 10%;
+    max-width: 100px;
+    background-color: rgba(0, 0, 0, 0.725);
+    color: rgb(0, 106, 255);
+    font-size: 1rem;
+    margin-top: -0.19rem;
+    margin-left: -15px;
+    padding: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .logout-icon {
+    vertical-align: middle; /* Align the image vertically within the button */
+    margin-right: 0.5rem; /* Add some spacing between the image and text */
+    max-height: 20px; /* Set a maximum height for the image */
+    width: auto; /* Adjust the width of the image */
+    height: 15px; /* Adjust the height of the image */
+  }
+/* .login_einput {}
+
+.login_pinput {}
+
+.login_btn {}
+
+.login_googlebtn {} */

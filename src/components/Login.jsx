@@ -1,45 +1,63 @@
-import React, { useState } from "react";
-import "./Login.css"; // Import custom CSS for styling
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { auth, signInWithEmailAndPassword, signInWithGoogle,logInWithEmailAndPassword } from "../Firebase";
+import "./Login.css";
+import { useAuthState } from "react-firebase-hooks/auth";
 
-export default function LoginPage() {
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  const [user, loading] = useAuthState(auth);
 
-    const handleLogin = () => {
-        // Perform validation here
-        if (username === "user" && password === "password") {
-            setIsLoggedIn(true);
-        }
-    };
+  useEffect(() => {
+    if (loading) return;
+    if (user) navigate("/Home");
+  }, [user, loading]);
 
-    return (
-        <div className="login-page">
-            <div className="login-container" style={{ margin: "50px 0" }}>   
-                <h1><b>LOGIN</b></h1>
-                <p> </p><p> </p><p> </p>
-                <div className="form-group">
-                    <label><b>USERNAME:</b></label>
-                    <input
-                        type="text"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                    />
-                </div>
-                <p></p>
-                <div className="form-group">
-                <label><b>PASSWORD:</b></label>
-                    <input
-                        type="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
-                </div>
-                <p style={{color: "blue"}}>Forgot password?</p>
-                <p> </p><p> </p><p> </p>
-                <button className="login-button" onClick={handleLogin}>Login</button>
-                {isLoggedIn && <p>You are logged in.</p>}
-            </div>
+  return (
+    <div className="login">
+      <div className="login_box">
+        <input
+          type="text"
+          className="login_einput"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="E-mail Address"
+        />
+        <input
+          type="password"
+          className="login_pinput"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="Password"
+        />
+        <button
+          className="login_btn"
+          onClick={() => logInWithEmailAndPassword(email, password)}
+        >
+          Login
+        </button>
+        <button className="login_btn login_googlebtn" onClick={signInWithGoogle}>
+          <div>
+            Login with Google
+            <img
+              src="https://www.transparentpng.com/thumb/google-logo/google-logo-png-icon-free-download-SUF63j.png"
+              alt=""
+            />
+          </div>
+        </button>
+        <div className="extra_options">
+          <div>
+            <Link to="/Reset">Forgot Password</Link>
+          </div>
+          <div>
+            Don't have an account? <Link to="/Register">Register</Link> now.
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
+
+export default Login;
