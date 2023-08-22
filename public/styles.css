@@ -1,0 +1,346 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #eee;
+  padding: 0 16px;
+}
+
+header {
+  background-color: black;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: white;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+
+/* navbar part is here. */
+
+
+/* Remove the width property to let Bootstrap handle it */
+
+nav {
+  width: 95vw;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* Remove the margin property to let Bootstrap handle it */
+
+li {
+  margin: 0 30px;
+}
+
+
+/* Add Bootstrap classes for spacing */
+
+.nav-links {
+  padding: 0 40px;
+  /* Add padding instead of margin for list items */
+}
+
+
+/* Style the links using Bootstrap classes */
+
+li a {
+  text-decoration: none;
+  color: white;
+  /* Customize the link color */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #fca311;
+  text-decoration: underline;
+  /* Add an underline on hover */
+}
+
+
+/* just below navbar */
+
+#title {
+  background-color: #deb887;  
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 5% 15%;
+  margin: 0;
+}
+
+/* for the gifs */
+.grid-container {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: orange;
+  padding: 10px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  color: black;
+  background-color:orange; /* Highlight color */
+   padding: 10px;
+  border-radius: 10px;
+} 
+
+/* for the new navbar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+--primary: #bc4123;
+}
+body {
+margin: 0;
+padding: 20px;
+font-family: "Poppins";
+background: var(--secondary);
+color: #000; /* Set the default text color to black */
+}
+/* Remove * selector or adjust text color for specific elements */
+p {
+margin: 20px 0;
+color: #000; /* Set text color for paragraphs to black */
+}
+button {
+border: 0;
+padding: 8px;
+border-radius: 4px;
+color: white;
+background: var(--primary);
+cursor: pointer;
+}
+header nav {
+display: flex;
+gap: 16px;
+justify-content: end;
+max-width: 1200px;
+margin: 0 auto;
+}
+header nav h1 {
+margin-right: auto;
+border-bottom: 3px solid var(--primary);
+}
+header nav a {
+text-decoration: none;
+padding: 6px;
+border-radius: 4px;
+}
+header nav a.active {
+background: var(--primary);
+}
+
+
+/* for fontsize of heading */
+
+.services-container {
+  display: flex;
+  justify-content: flex-start;
+  /* Start from the left side */
+  gap: 25px;
+  /* Adjust the gap between the services */
+  overflow: hidden;
+  /* Hide any overflowing content */
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.service-box:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-image {
+  margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.service-description {
+  text-align: left;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+
+/* for the gifs */
+.grid-container {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: orange;
+  padding: 10px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  color: black;
+  background-color:orange; /* Highlight color */
+   padding: 10px;
+  border-radius: 10px;
+} 
+
+
+/* css for TtoSpeech page */
+
+/* Add your global styles here */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f5f5f5;
+}
+
+.container {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+background-color: #ffffff;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+margin-top: 0;
+}
+
+select,
+textarea,
+button {
+display: block;
+margin-bottom: 10px;
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+}
+
+button {
+background-color: #007bff;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+button:disabled {
+background-color: #ccc;
+cursor: not-allowed;
+}
+
+p {
+font-size: 18px;
+}
+
+
+/* Cirriculum.css */
+.books {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.books h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.books .books-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.books .books-container .book {
+  margin-bottom: 20px;
+}
+
+.books .books-container .book img {
+  width: 100%;
+}
+
+.books .books-container .book .book-info {
+  padding: 10px;
+}
+
+.books .books-container .book .book-info h3 {
+  font-size: 18px;
+}
+
+.books .books-container .book .book-info p {
+  font-size: 16px;
+}
+
+.books .full-screen-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* ... (other CSS rules) */
