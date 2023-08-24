@@ -55,9 +55,9 @@ export default function App()
               {/* here we link and give path in <Routes></Routes> */}
               <h1>SignQuest</h1>
               <NavLink to="/">HOME</NavLink>
-              <NavLink to="about">About</NavLink>
+              <NavLink to="about" >About</NavLink>
               <NavLink to="contact">Contact</NavLink>
-
+                                                                                                                      
               {/*To change the login link to logout button upon successful login */}
             {user ? (
             <>

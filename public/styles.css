@@ -93,6 +93,11 @@ li a {
     /* Add an underline on hover */
 }
 
+.nav-link {
+    padding: 0 40px;
+    /* Add padding instead of margin for list items */
+}
+
 
 /* just below navbar */
 
@@ -175,8 +180,29 @@ header nav {
 
 header nav h1 {
     margin-right: auto;
-    border-bottom: 3px solid var(--primary);
+    position: relative;
 }
+
+header nav h1::before,
+header nav h1::after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    opacity: 0.8;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: red;
+}
+
+header nav h1::before {
+    left: 0;
+}
+
+header nav h1::after {
+    right: 0;
+}
+/* In this code, two pseudo-elements are added, one before and one after the <h1> element. They are absolutely positioned at the top center of the <h1> (adjusted to be vertically centered), and each covers 50% of the width of the <h1>. This creates a red line that appears to cut through the middle of the <h1> element. The transform: translateY(-50%) centers the lines vertically regardless of their height. */
 
 header nav a {
     text-decoration: none;

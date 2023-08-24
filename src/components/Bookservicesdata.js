@@ -3,7 +3,7 @@ const bookservicesData = [{
         altText: "Book1",
         heading: "Deaf Culture: Exploring Deaf Communities in the United States",
         description: "This book explores Deaf culture's rich tapestry, highlighting unique communication, values, history, and identity that underpin Deaf communities.",
-        linkTo: "/", //redirect page
+        linkTo: "./book2.pdf", //redirect page
         imageWidth: "300px",
         imageHeight: "200px",
     },
@@ -12,7 +12,7 @@ const bookservicesData = [{
         altText: "Book2",
         heading: "Deaf Education in the 21st century Topics and Trends",
         description: "This book explores integrating chatbots and text-based tools, highlighting interactive learning through question answering and diverse communication modes.",
-        linkTo: "/books",
+        linkTo: "/Deaf_Mute.pdf",
         imageWidth: "300px",
         imageHeight: "200px"
     },

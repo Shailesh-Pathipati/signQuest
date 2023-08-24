@@ -20,10 +20,12 @@ export default function BookServiceInfo({ imgSrc, altText, heading, description,
             </h4>
           )}
           <p>{description}</p>
+
           {linkTo && (
-            <Link to={linkTo} className="service-link">
-              View Book
-            </Link>
+             <>
+             {/* <embed src={linkTo} type="application/pdf" width="100" height="100" /> */}
+             <button onClick={() => window.open(linkTo, "_blank")}>View Book</button>
+           </>
           )}
         </div>
       </div>

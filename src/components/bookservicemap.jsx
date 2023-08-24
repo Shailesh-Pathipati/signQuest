@@ -6,7 +6,7 @@ import bookservicesData from "./Bookservicesdata"; // Adjust the import path
 export default function BookServicesList() {
     const itemsPerRow = 3; // Number of items per row
     const booksBeforeNarratives = 9;
-  
+    
     return (
       <div>
         <h2 style={{ textAlign: "center", marginTop: "40px",fontWeight:"bold"}}>STUDY RELATED BOOKS</h2>
@@ -18,7 +18,7 @@ export default function BookServicesList() {
                 altText={service.altText}
                 heading={service.heading}
                 description={service.description}
-                linkTo={`/books/${index}`}
+                linkTo={service.linkTo}
                 imageWidth={service.imageWidth}
                 imageHeight={service.imageHeight}
               />
@@ -36,7 +36,7 @@ export default function BookServicesList() {
                 altText={service.altText}
                 heading={service.heading}
                 description={service.description}
-                linkTo={`/books/${index}`}
+                linkTo={service.linkTo}
                 imageWidth={service.imageWidth}
                 imageHeight={service.imageHeight}
               />
