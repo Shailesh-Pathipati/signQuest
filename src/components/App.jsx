@@ -1,10 +1,11 @@
-
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, logOut } from "../Firebase";
 import "./Login.css";
 import "./styles.css";
+import bookservicesData from "./Bookservicesdata";
 
+import Books from "./Books";
 // import ReactDOM from "react-dom"; // Import ReactDOM here
 import {
   // BrowserRouter as Router,
@@ -16,35 +17,23 @@ import About from "./About";
 import ChatBotIcon from "./ChatBotIcon";
 // import Heading from "./Header";
 import Footer from "./Footer";
-import gifsData from "../gifsData";
-import Card from "./Card.jsx";
 import Home from "./Home";
 import Login from "./Login";
 import TexttoSpeechPage from "./TexttoSpeechPage";
 import Chatbot from "./ChatbotServicePage";
-import Cirriculum from "./ExpandedCoreCurriculumPage";
+//import Cirriculum from "./ExpandedCoreCurriculumPage";
+import BookServicesList from "./bookservicemap";
+
 import LipReading from "./LipReading";
 import Contact from "./Contact";
 import Register from "./Register"; // Import the Register component
 import Reset from "./Reset"; // Import the Reset component
+import FirstServicePage from "./FirstServicePage"; // Replace with the correct path
+
 
 
 //this is completely for the FirstServie gifs data handling.
-const GifComponent = () => {
-    const createGifs = (gif) => (
-      <Card
-        key={gif.id}
-        img={gif.imgURL}
-        des={gif.des}
-      />
-    );
-  
-    return (
-      <div className="grid-container">
-        {gifsData.map(createGifs)}
-      </div>
-    );
-  };
+
 export default function App()
 {
   
@@ -91,13 +80,17 @@ export default function App()
             <Route path="/register" element={<Register />} /> {/* Added Register Route */}
             <Route path="/reset" element={<Reset />} /> {/* Added Reset Route */}
             {/* Wrap the div with a Route or Fragment */}
-            <Route path="/first-service" element={<GifComponent />} />
+            <Route path="/first-service" element={<FirstServicePage />} />
             <Route path="/tap-to-speak" element={<TexttoSpeechPage />} />
+            <Route path="/books" element={<Books />} />
             <Route path="/chatbot-service" element={<Chatbot />} />
             <Route
-              path="/expanded-core-curriculum"
-              element={<Cirriculum />}
-            />
+  path="/expanded-core-curriculum"
+  element={<BookServicesList bookservicesData={bookservicesData} />}
+/>
+
+
+
             <Route path="/lip-reading" element={<LipReading />} />
           </Routes>
         </main>

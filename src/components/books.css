@@ -1,0 +1,23 @@
+.books-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .book-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px auto;
+    text-align: center;
+    max-width: 500px;
+  }
+  
+  embed {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  

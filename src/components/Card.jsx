@@ -1,4 +1,6 @@
 import React from "react";
+import "./FirstServicePage.css"; // Make sure to adjust the path to your CSS file
+
 
 
 export default function Card(props)

@@ -5,6 +5,6 @@ const books = [
     },
     {
       title: 'The Lord of the Rings',
-      pdf: "Deaf:Mute.pdf",
+      pdf: "Deaf_Mute.pdf",
     },
   ];
