@@ -26,24 +26,11 @@ import LipReading from "./LipReading";
 import Contact from "./Contact";
 import Register from "./Register"; // Import the Register component
 import Reset from "./Reset"; // Import the Reset component
+import FirstServicePage from "./FirstServicePage"; // Replace with the correct path
 
 
 //this is completely for the FirstServie gifs data handling.
-const GifComponent = () => {
-    const createGifs = (gif) => (
-      <Card
-        key={gif.id}
-        img={gif.imgURL}
-        des={gif.des}
-      />
-    );
-  
-    return (
-      <div className="grid-container">
-        {gifsData.map(createGifs)}
-      </div>
-    );
-  };
+
 export default function App()
 {
   
@@ -90,7 +77,7 @@ export default function App()
             <Route path="/register" element={<Register />} /> {/* Added Register Route */}
             <Route path="/reset" element={<Reset />} /> {/* Added Reset Route */}
             {/* Wrap the div with a Route or Fragment */}
-            <Route path="/first-service" element={<GifComponent />} />
+            <Route path="/first-service" element={<FirstServicePage />} />
             <Route path="/tap-to-speak" element={<TexttoSpeechPage />} />
             <Route path="/chatbot-service" element={<Chatbot />} />
             <Route

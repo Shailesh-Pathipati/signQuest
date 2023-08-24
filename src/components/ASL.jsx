@@ -11,7 +11,7 @@ export default function ASL()
                                 width="100%"
                                 height="315"
                                 src="https://www.youtube.com/embed/VIDEO_ID_1"
-                                frameBorder="0"
+
                                 allowFullScreen
                             ></iframe>
                             <p>Introduction to Sign Language</p>
@@ -22,7 +22,7 @@ export default function ASL()
                                 width="100%"
                                 height="315"
                                 src="https://www.youtube.com/embed/VIDEO_ID_2"
-                                frameBorder="0"
+                               
                                 allowFullScreen
                             ></iframe>
                             <p>Common Phrases in Sign Language</p>

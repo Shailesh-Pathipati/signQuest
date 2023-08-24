@@ -9,7 +9,7 @@ function Books() {
       <div>
         <h2>Book 1</h2>
         <embed src="/book2.pdf" type="application/pdf" width="500" height="600" />
-        <button onClick={() => window.open("/Deaf:Mute.pdf", "_blank")}>Full Screen</button>
+        <button onClick={() => window.open("/Deaf_Mute.pdf", "_blank")}>Full Screen</button>
       </div>
       <div>
         <h2>Book 2</h2>
