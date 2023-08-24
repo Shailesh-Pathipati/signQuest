@@ -89,7 +89,6 @@ export default function ASL()
                                 height="315"
                                 src="https://www.youtube.com/embed/Q5LK3WnNQxs"
                                 frameBorder="0"
-                                src="https://www.youtube.com/embed/VIDEO_ID_1"
 
                                 allowFullScreen
                             ></iframe>

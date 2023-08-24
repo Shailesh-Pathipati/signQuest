@@ -266,6 +266,7 @@ header nav a.active {
 
 /* for fontsize of heading */
 
+
 .services-container {
     display: flex;
     justify-content: flex-start;
@@ -289,6 +290,36 @@ header nav a.active {
     position: relative;
     z-index: 1;
 }
+
+/* css for gifs/videos */
+.services-container2 {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add some space around the container */
+  }
+  
+  .service-column2 {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each column */
+    margin: 10px; /* Adjust spacing between columns */
+    text-align: center; /* Center content horizontally within each column */
+  }
+  
+  .service-column2 img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto; /* Maintain image aspect ratio */
+  }
+  
+  .service-column2 h4 {
+    font-weight: bold;
+  }
+  
+  .service-link {
+    display: block;
+    margin-top: 10px;
+  }
+  
 
 .service-box:hover {
     transform: translateY(-5px) scale(1.05);

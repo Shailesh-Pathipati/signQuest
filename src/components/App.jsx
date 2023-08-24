@@ -4,6 +4,8 @@ import { auth, logOut } from "../Firebase";
 import "./Login.css";
 import "./styles.css";
 import bookservicesData from "./Bookservicesdata";
+import LearnMap from "./learnmap";
+import LearnData from "./learnasldata";
 
 import Books from "./Books";
 // import ReactDOM from "react-dom"; // Import ReactDOM here
@@ -28,8 +30,8 @@ import LipReading from "./LipReading";
 import Contact from "./Contact";
 import Register from "./Register"; // Import the Register component
 import Reset from "./Reset"; // Import the Reset component
-import FirstServicePage from "./FirstServicePage"; // Replace with the correct path
-
+import GifComponent from "./FirstServicePage";
+import ASL from "./ASL";
 
 
 //this is completely for the FirstServie gifs data handling.
@@ -80,7 +82,9 @@ export default function App()
             <Route path="/register" element={<Register />} /> {/* Added Register Route */}
             <Route path="/reset" element={<Reset />} /> {/* Added Reset Route */}
             {/* Wrap the div with a Route or Fragment */}
-            <Route path="/first-service" element={<FirstServicePage />} />
+            <Route path="/first-service" element={<LearnMap LearnData={LearnData} />} />
+            <Route path="/FirstServicePage" element={<GifComponent />} />
+            <Route path="/aslvidoes" element={<ASL />} />
             <Route path="/tap-to-speak" element={<TexttoSpeechPage />} />
             <Route path="/books" element={<Books />} />
             <Route path="/chatbot-service" element={<Chatbot />} />
