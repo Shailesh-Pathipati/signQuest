@@ -1,0 +1,27 @@
+/* Styles for the Footer component */
+.footer {
+    background-color: #000; /* Black background */
+    color: #fff;
+    text-align: center;
+    height:60px;
+    width: 100%; /* Take full width */
+    position: relative; /* Position the footer relatively */
+    clear: both; /* Clear floats */
+    
+  }
+  
+  .footer-content {
+    text-align: top;
+    position: top;
+    margin-top: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  

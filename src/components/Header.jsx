@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-dark bg-black">
-      <h1>SignQuest</h1>
+      <h1 align="left">SignQuest</h1>
       <div className="container-fluid">
         <ul className="navbar-nav ms-auto nav-links">
           <li className="nav-item">
