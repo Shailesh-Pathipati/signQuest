@@ -73,6 +73,7 @@ li {
 
 .nav-links {
   padding: 0 40px;
+  color: whitesmoke;
   /* Add padding instead of margin for list items */
 }
 
@@ -89,10 +90,13 @@ li a {
 
 .nav-links li a:hover {
   color: #fca311;
+  color: white;
   text-decoration: underline;
   /* Add an underline on hover */
 }
-
+.nav-links li{
+  color: white;
+}
 
 /* just below navbar */
 
@@ -152,6 +156,30 @@ color: white;
 background: var(--primary);
 cursor: pointer;
 }
+
+/* styles.css */
+.nav-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.align-left{
+  margin-left: -16rem;
+}
+
+.align-right{
+  margin-right: 9rem;
+}
+
+/* Add this to your CSS file */
+.white-link {
+  color: white;
+  text-decoration: none;
+  margin-right:10px;
+}
+
 header nav {
 display: flex;
 gap: 16px;
@@ -159,9 +187,37 @@ justify-content: end;
 max-width: 1200px;
 margin: 0 auto;
 }
-header nav h1 {
+/* header nav h1 {
 margin-right: auto;
-border-bottom: 3px solid var(--primary);
+border-bottom: 3px solid var(--primary); 
+border:line-through;
+border-color: #bc4123;
+
+} */
+
+header nav h1 {
+  margin-right: auto;
+  position: relative;
+}
+
+header nav h1::before,
+header nav h1::after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 50%;
+  opacity: 0.7;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+header nav h1::before {
+  left: 0;
+}
+
+header nav h1::after {
+  right: 0;
 }
 header nav a {
 text-decoration: none;

@@ -3,6 +3,7 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, logOut } from "../Firebase";
 import "./Login.css";
+import "./styles.css";
 
 // import ReactDOM from "react-dom"; // Import ReactDOM here
 import {
@@ -59,23 +60,23 @@ export default function App()
     return (
         <div>
           <header>
-            <nav>
+            <nav className="nav-container">
               {/* here we link and give path in <Routes></Routes> */}
-              <h1>SignQuest</h1>
-              <NavLink to="/">HOME</NavLink>
-              <NavLink to="about">About</NavLink>
-              <NavLink to="contact">Contact</NavLink>
+              <h1 className="align-left">SignQuest</h1>
+              <NavLink to="/" className='white-link'>HOME</NavLink>
+              <NavLink to="about" className='white-link'>ABOUT</NavLink>
+              <NavLink to="contact" className='white-link'>CONTACT</NavLink>
 
               {/*To change the login link to logout button upon successful login */}
             {user ? (
             <>
               <button className="logout" onClick={handleLogout}>
                    <img src="..\logout-icon.png" alt="Logout Icon" className="logout-icon"  />
-                   Logout
+                   LOGOUT
               </button>
             </>
           ) : (
-            <NavLink to="/login">Login</NavLink>
+            <NavLink to="/login" className='white-link'>LOGIN</NavLink>
           )}
 
 
