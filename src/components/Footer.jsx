@@ -1,10 +1,15 @@
-import React from "react";
+import React from 'react';
+import './Footer.css';
 
-
-export default function Footer()
-{
-    const currentYear = new Date().getFullYear();
-    return <div>
-        <p>Copyright {currentYear}</p>
-        </div>
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-content">
+        <p>&copy; 2023 SignQuest. All rights reserved.</p>
+        <p>Contact us at: 21z328@psgtech.ac.in</p>
+      </div>
+    </footer>
+  );
 };
+
+export default Footer;

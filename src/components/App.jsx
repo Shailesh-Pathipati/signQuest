@@ -110,9 +110,9 @@ export default function App()
           </Routes>
         </main>
           <footer className="footer">
-            <Footer />
           </footer>
           <ChatBotIcon/>{/* included the chatbot in the home page also*/ }
+          <Footer/>
         </div>
       );     
 }

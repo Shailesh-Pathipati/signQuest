@@ -1,0 +1,84 @@
+/* Styles for the FAQ page */
+.faq-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Styles for the FAQ item */
+  .faq-item {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Added transition for hovering and transform */
+  }
+  
+  .faq-item:hover {
+    background-color: #f4f4f4; /* Change background color on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow on hover */
+    transform: translateY(-5px); /* Move the box up on hover */
+  }
+  
+  .faq-question {
+    display: flex;
+    font-size: small;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    display: inline-block;
+    mask-image: url('https://c8.alamy.com/comp/2B3J1W6/initial-letter-sq-logo-design-vector-template-sq-letter-logo-design-2B3J1W6.jpg'); /* Use your own icon or replace with an image URL */
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    transition: transform 0.3s;
+  }
+  
+  .open {
+    transform: rotate(180deg);
+  }
+  
+  .faq-answer {
+    margin-top: 10px;
+    display: block;
+    font-size: larger;
+  }
+
+/* ChatbotServicePage.css */
+
+/* ChatbotServicePage.css */
+
+.intro-paragraph {
+    font-family: Arial, sans-serif; /* Change the font family */
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the paragraph */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    padding: 20px; /* Add padding around the paragraph */
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.centered-img {
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  
+  
