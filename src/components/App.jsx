@@ -3,7 +3,9 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, logOut } from "../Firebase";
 import "./Login.css";
-
+import bookservicesData from "./Bookservicesdata";
+import books from "./booksdata";
+import Books from "./Books";
 // import ReactDOM from "react-dom"; // Import ReactDOM here
 import {
   // BrowserRouter as Router,
@@ -21,12 +23,15 @@ import Home from "./Home";
 import Login from "./Login";
 import TexttoSpeechPage from "./TexttoSpeechPage";
 import Chatbot from "./ChatbotServicePage";
-import Cirriculum from "./ExpandedCoreCurriculumPage";
+//import Cirriculum from "./ExpandedCoreCurriculumPage";
+import BookServicesList from "./bookservicemap";
+
 import LipReading from "./LipReading";
 import Contact from "./Contact";
 import Register from "./Register"; // Import the Register component
 import Reset from "./Reset"; // Import the Reset component
 import FirstServicePage from "./FirstServicePage"; // Replace with the correct path
+
 
 
 //this is completely for the FirstServie gifs data handling.
@@ -79,11 +84,15 @@ export default function App()
             {/* Wrap the div with a Route or Fragment */}
             <Route path="/first-service" element={<FirstServicePage />} />
             <Route path="/tap-to-speak" element={<TexttoSpeechPage />} />
+            <Route path="/books" element={<Books />} />
             <Route path="/chatbot-service" element={<Chatbot />} />
             <Route
-              path="/expanded-core-curriculum"
-              element={<Cirriculum />}
-            />
+  path="/expanded-core-curriculum"
+  element={<BookServicesList bookservicesData={bookservicesData} />}
+/>
+
+
+
             <Route path="/lip-reading" element={<LipReading />} />
           </Routes>
         </main>

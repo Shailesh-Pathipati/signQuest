@@ -7,7 +7,7 @@
 }
 
 { /*1. ASL Tutorials*/ } { /*2. Chatbot Facility*/ } { /*3. Audio Captioning for external video resources*/ } { /*4. Providing core curriculum*/ }
-const servicesData = [{
+const bookservicesData = [{
         imgSrc: "hello.gif",
         altText: "Sign Language GIF",
         heading: "ASL Tutorials",
@@ -51,4 +51,4 @@ const servicesData = [{
 
 ];
 
-export default servicesData;
+export default bookservicesData;
