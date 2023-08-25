@@ -1,5 +1,5 @@
 const LearnData = [{
-    imgSrc: "hello.gif",
+    imgSrc: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnZncHI1d3Y1YmlsamdiMjl0YTl6ZnBqemQ5YXN5Zms5c3dwY2hmZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKSRNcdPmcNmTGo/giphy.gif",
     altText: "Sign Language GIF",
     heading: "ASL Gifs",
     linkTo: "/FirstServicePage", // redirect page
