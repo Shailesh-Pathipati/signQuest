@@ -34,7 +34,7 @@ const bookservicesData = [{
     {
         imgSrc: "curriculum.gif",
         altText: "School Curriculum",
-        heading: "Expanded Core Curriculum",
+        heading: "Expanded Knowledge Resources",
         description: "Comprehensive curriculum, encompassing different subjects and grade levels. It facilitates learning through engaging lessons,videos, quizzes and assignments that cater to the student's specific grade, ensuring a tailored educational experience.",
         linkTo: "/expanded-core-curriculum", //redirect page
         gifDimensions: { width: "200px", height: "200px" },
